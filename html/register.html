@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TheAgora::Register</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+    <body>
+        <div style="width:700px; margin: auto">
+            <img src="##site##images/platform/logo.jpg" />
+            <form method="POST" action="##site##register" enctype="multipart/form-data">
+                <div class="col-sm-8 row g-1">
+                    <h1>Account Details</h1>
+                    ##errormessage##
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" name="username"/><br>
+                    <label for="password" class="form-label">Pasword</label>
+                    <input type="password" class="form-control" name="password"/><br>
+                    <label for="confirmpassword" class="form-label" id="confirmpassword">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirmpassword" id="confirmpassword"/><br>
+                    <label for="ownerfname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="ownerfname"><br>
+                    <label for="ownerlname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" name="ownerlname"><br>
+                </div>
+                <br>
+                <div class="col-sm-8 row g-1">
+                    <h1>Business Details</h1>
+                    <label for="businessname" class="form-label">Business Name</label>
+                    <input type="text" class="form-control" name="businessname"><br>
+                    <label for="locationbased" class="form-label">Location Based</label>
+                    <input type="text" class="form-control" name="locationbased"><br>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email"></input><br>
+                    <label for="mobile" class="form-label">Mobile</label>
+                    <input type="tel" class="form-control" name="mobile"></input><br>
+                    <label for="logo" class="form-label">Business Icon</label><br>
+                    <input type="file" class="form-control" name="logo"><br>
+                </div>
+                <br>
+                <input type="submit" value="signup" class="btn btn-primary" name="signup"/>
+            </form>
+            <br><p>Already a member? login <a href="##site##login">here</a></p>
+            <br><br>
+        </div>
+        <div class="footer">
+            <hr/>
+            <a href="##site##static/privacy" >Privacy Policy</a>&nbsp;
+            <a href="##site##static/contact" >Contact us </a>	
+            <p>© Copyright TheAgora 2022 Limited</p>
+            <hr/>
+        </div>
+    </body>
+</html>

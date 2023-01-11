@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TheAgora::Login</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+    <body>
+        <br><br>
+        <div style="width: 500px; margin: auto">
+        <img src="##site##images/platform/logo.jpg" />
+        <h1>Login</h1>
+        ##errormessage##
+        <form method="POST" action="##site##login">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+            <br>
+            <input type="submit" value="login" name="login" class="btn btn-primary">
+        </form>
+        <br><p>Not yet a member? register <a href="##site##register">here</a></p>
+    </div>
+    </body>
+</html>

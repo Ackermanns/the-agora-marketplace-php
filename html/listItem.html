@@ -1,0 +1,29 @@
+<div style="width:700px">
+    <form method="POST" action="##site##static/listitem" enctype="multipart/form-data">
+        <div class="col-sm-5 row g-2">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" name="title" minlength="4" maxlength="8" size="10"/><br>
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" rows="3" cols="4" class="form-control"></textarea>
+            <div class="col-sm-7">
+                <label for="price" class="form-label" id="price">Price</label>
+                <input type="number" class="form-control" name="price" id="price"/><br>
+            </div>
+            <div class="col-sm-5">
+                <label for="rate" class="form-label">Rate</label>
+                <select class="form-select" aria-label="Default select example" name="rate">
+                    <option selected>each</option>
+                    <option value="1">per gram</option>
+                    <option value="2">per kilogram</option>
+                </select>
+            </div>
+            <label for="hashtags" class="form-label">Hashtags</label>
+            <p>E.g. #fresh, #apples, #orchids, etc.</p>
+            <textarea name="hashtags" rows="3" cols="4" class="form-control"></textarea>
+            <label for="imagefile" class="form-label">Add Image</label>
+            <input type="file" class="form-control" name="imagefile">
+        </div>
+        <br>
+        <input type="submit" value="Add Listing" class="btn btn-primary" name="addListing"/>
+    </form>
+</div>
